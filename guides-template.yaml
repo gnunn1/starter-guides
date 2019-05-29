@@ -68,12 +68,12 @@ objects:
         - nationalparks-java
         - nationalparks-java-databases
         - nationalparks-application-health
-        - nationalparks-java-pipeline
-        - nationalparks-java-pipeline-codechanges-gogs
-        - mlbparks-templates
-        - mlbparks-clustering
-        - mlbparks-binary-build
-        - mlbparks-debugging
+        # - nationalparks-java-pipeline
+        # - nationalparks-java-pipeline-codechanges-gogs
+        # - mlbparks-templates
+        # - mlbparks-clustering
+        # - mlbparks-binary-build
+        # - mlbparks-debugging
         - common-further-resources
         - common-workshop-links
 - kind: ImageStream
