@@ -14,10 +14,9 @@ The infrastructure node is providing several services:
 * This lab manual
 * The OpenShift Docker registry
 * The OpenShift router
-* Etherpad
 
 Additionally, a predefined number of user accounts have been provisioned. Your
-username will be "userX" where "X" is replaced by a number assigned to you
+username will be "userXY" where "XY" is replaced by a number assigned to you
 by the instructor.
 
 For example, if assigned number 8, your username will be "user8". If assigned
