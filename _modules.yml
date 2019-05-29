@@ -2,7 +2,7 @@ config:
   vars:
     ##
     # Common variables (environment dependant)
-    # 
+    #
     - name: CONSOLE_ADDRESS
       desc: Address to access the OpenShift console
       value: https://master.osevg.openshiftworkshop.com
@@ -23,13 +23,13 @@ config:
       value: "userXY"
     ##
     # Common fixed variables
-    # 
+    #
     - name: DOCS_URL
       desc: URL prefix to access docs (docs.openshift.org/latest) without the protocol prefix. (https:// will be used.)
       value: docs.openshift.com/container-platform/latest
     ##
     # Module environment
-    # 
+    #
     - name: ENV_MASTERS
       desc: Number of master nodes in the cluster
       value: 1
@@ -41,7 +41,7 @@ config:
       value: 20
     ##
     # Module installing CLI
-    # 
+    #
     - name: DOWNLOAD_CLIENT_WINDOWS
       desc: URL to download oc client for Windows
       value: "https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-windows.zip"
@@ -59,7 +59,7 @@ config:
       value: "oc v3.11.0+0cbc58b\nkubernetes v1.11.0+d4cacc0"
     ##
     # Module docker
-    # 
+    #
     - name: PARKSMAP_IMAGENAME
       desc: Docker image name for the parksmap application
       value: "parksmap"
@@ -78,14 +78,14 @@ modules:
       ROUTER_ADDRESS:
   common-parksmap-architecture:
     name: Architecture Overview of the ParksMap Application
-  common-cli:
-    name: Installing the *oc* client tool
-    vars:
-      DOWNLOAD_CLIENT_WINDOWS:
-      DOWNLOAD_CLIENT_MAC:
-      DOWNLOAD_CLIENT_LIN32:
-      DOWNLOAD_CLIENT_LIN64:
-      OC_VERSION:
+  # common-cli:
+  #   name: Installing the *oc* client tool
+  #   vars:
+  #     DOWNLOAD_CLIENT_WINDOWS:
+  #     DOWNLOAD_CLIENT_MAC:
+  #     DOWNLOAD_CLIENT_LIN32:
+  #     DOWNLOAD_CLIENT_LIN64:
+  #     OC_VERSION:
   common-explore:
     name: Exploring the CLI and Web Console
     vars:

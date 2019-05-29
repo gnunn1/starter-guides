@@ -1,13 +1,15 @@
 == Command Line
 
-The first thing we want to do to ensure that our `oc` command line tools was
-installed and successfully added to our path is to log in to the OpenShift
-environment that has been provided for this Workshop session. 
+OpenShift ships with a feature rich web console as well as command line tools
+to provide users with a nice interface to work with applications deployed to the
+platform.  The OpenShift tools are a single executable written in the Go
+programming language and is available for the following operating systems:
 
-[NOTE]
-====
-In case you had trouble installing the command line tools, you can go ahead and use a hosted version running in our OpenShift cluster. Open a new browser tab and point it to:
+- Microsoft Windows
+- Mac OSX
+- Linux
 
+For this lab, we have provisioned the command line tool for you in a hosted version running in our OpenShift cluster. Open a new browser tab and point it to:
 
 [source,bash,role=copypaste]
 ----
@@ -15,7 +17,11 @@ http://terminal-{{INFRA_PROJECT}}.{{ROUTER_ADDRESS}}
 ----
 
 You will need to log in with your OpenShift user and click on `Allow selected permissions`. You can then continue with the workshop.
-====
+
+The first thing we want to do to ensure that our `oc` command line tools was
+installed and successfully added to our path is to log in to the OpenShift
+environment that has been provided for this Workshop session.
+
 
 In order to log in, we will use the `oc` command and then specify the server that we
 want to authenticate to. Issue the following command:
@@ -100,7 +106,7 @@ During this lab, we are going to use a few different commands to make sure that
 things in the environment are working as expected.  Don't worry if you don't
 understand all of the terminology as we will cover it in detail in later labs.
 
-If you didn't have a project already created for you, the first thing we want 
+If you didn't have a project already created for you, the first thing we want
 to do is create the *{{ USER_PROJECT }}* project. You can do this with the following command:
 
 CAUTION: In the following command, replace `{{ USER_PROJECT }}` with the project provided to you.
@@ -117,8 +123,8 @@ You will see the following confirmation message:
 Now using project "{{ USER_PROJECT }}" on server "{{CONSOLE_ADDRESS}}".
 ----
 
-If you had multiple projects, the first thing you would want to do is to switch 
-to the *{{ USER_PROJECT }}* project to make sure you're on the correct project from now on. 
+If you had multiple projects, the first thing you would want to do is to switch
+to the *{{ USER_PROJECT }}* project to make sure you're on the correct project from now on.
 You can do this with the following command:
 
 CAUTION: In the following command, replace `{{ USER_PROJECT }}` with the project provided to you.
@@ -167,7 +173,7 @@ change.
 
 image::explore-webconsole2.png[Explore Project]
 
-When the provided cluster has metrics aggregation capabilities configured you might see an 
+When the provided cluster has metrics aggregation capabilities configured you might see an
 error in the web console (when the cluster uses self signed certificates):
 
 image::explore-webconsole2-error.png[Web Console]
