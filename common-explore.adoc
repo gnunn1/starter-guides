@@ -149,7 +149,7 @@ OpenShift ships with a web-based console that will allow users to
 perform various tasks via a browser.  To get a feel for how the web console
 works, open your browser and go to the following URL:
 
-*link:{{CONSOLE_ADDRESS}}[]*
+*link:{{CONSOLE_ADDRESS}}[^]*
 
 The first screen you will see is the authentication screen. You will be prompted for the username and password combination for your user account. Use the username and password combination provided to you by the instructor of this workshop:
 
