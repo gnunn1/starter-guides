@@ -5,13 +5,11 @@ You can find all urls, hostnames, usernames and passwords that are needed during
 Address: {{CONSOLE_ADDRESS}} +
 
 Username: `{{ USER_NAME }}` +
-Password: `{{ USER_PASSWORD }}` +
-
-
+Password: Provided by Instructor
 
 == Workshop Guides
 
-Web: http://starter-guides-{{ INFRA_PROJECT }}.{{ ROUTER_ADDRESS }}[^]
+Web: http://starter-guides-starter-guides.apps.toronto-ba4e.openshiftworkshop.com[^]
 
 == Web terminal
 
